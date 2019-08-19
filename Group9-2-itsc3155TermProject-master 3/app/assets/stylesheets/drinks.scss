@@ -1,0 +1,122 @@
+// Place all the styles related to the Drinks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// #navContainer {
+//     width: 100%;
+//     display: block;
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+// }
+
+#navContainer {
+    color: #aca8ad;
+    margin: auto auto 0 auto;
+    flex-shrink: 0;
+    background-color: #241b26;
+    text-align: center;
+    font-family: Verdana;
+    width: 100%;
+}
+
+// css for hover over the navi bar
+li a:hover:not(.active) {
+    color: #4CAF50;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 995px;
+    margin: 3% auto 3% auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(events2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+
+ul#nav {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    color: #aca8ad;
+    background-color: #241b26;
+}
+
+#nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 32px;
+}
+
+// #clearfix {
+//     margin-top: 3%;
+// }
+
+
+
+.box {
+    position: absolute;
+    > h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2.2em;
+    }
+    section.image {
+        padding: 20px 0px 0px 0px;
+        content:url(home-hero.jpg);
+        width: 100%;
+    }
+    border-top: 10px solid #241b26;
+    width: 988px;
+    overflow: auto;
+
+    font-family: Verdana;
+    .within_home_box{
+        padding-left: 70px;
+        padding-right: 80px;
+        color: #241b26;
+        text-align: left;
+        > p.p {
+            font-size: 20px;
+        }
+        > h2 {
+            padding-top: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+}
+
+.box_transparent {
+    opacity: 0.93;
+    position: absolute;
+    filter: drop-shadow(0 0 0.75rem black);
+    background-color: #fcfcfc;
+    width: 988px;
+    height: 1120px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

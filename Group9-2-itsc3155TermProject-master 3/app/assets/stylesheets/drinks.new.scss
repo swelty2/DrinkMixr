@@ -1,0 +1,181 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.checkbox-label-new {
+	width:16%;
+	border: 2px solid #ccc;
+	background: #f8f8f8;
+	border-radius: 2px;
+	text-align: center;
+	padding: 12px 1.5rem;
+	margin-bottom:5px;
+	font-size: 1.1rem;
+	display: inline-block;
+	// box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
+}
+.checkbox-label-new:hover {
+    background:#ccc;
+}
+.checkbox-new {
+    position:absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+.checkbox-new:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+}
+
+/* WebKit gets its native focus styles.
+ */
+@media (-webkit-min-device-pixel-ratio:0) {
+  .checkbox-new:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+
+.checkbox-new:active + label {
+    background-color: #ccc;
+}
+.checkbox-new:checked + label {
+    background-position: 0 0;
+    background: #4CAF50;
+    color: white;
+    -webkit-transition: color .25s, background .25s; /* Safari */
+    transition: color .25s, background .25s;
+}
+
+    section.image3 {
+        top: 11px;
+        content:url(Signature_Beverage.jpg);
+        width: 995px;
+        position: relative;
+        z-index:2;
+    }
+
+
+.new_box {
+    opacity: 0.97;
+    position: relative;
+    top: -275px;
+    filter: drop-shadow(0 0 0.75rem black);
+    .error_explanation {
+        margin-top: -25px;
+        text-align: left;
+        padding-left: 175px;
+        color: red;
+        padding-bottom: 10px;
+    }
+    padding-top: 300px;
+    border-top: 10px solid #241b26;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: auto;
+    color: #241b26;
+    font-family: Verdana;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 80px;
+    
+    > section.drink_name {
+        text-align: left;
+        padding-left: 100px;
+        padding-bottom: 5px;
+        input[type = text] {
+            width: 86%;
+            padding: 17px 20px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+            font-size: 1em;
+        }
+    }
+    > section.alcoholPerVolumeRegion {
+        margin-top: 5px;
+        text-align: left;
+        padding-left: 100px;
+        padding-bottom: 5px;
+        .text_field {
+            width: 20%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+            font-size: 1em;
+        }
+    }
+    > section.flavors {
+        text-align: left;
+        padding-left: 100px;
+        padding-top: 5px;
+        select {                
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+            color: #47515c;
+            padding: 12px 25px 12px 25px;
+            width: 182px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+    }
+    .new_text {
+        padding-bottom:5px;
+    }
+    > section.liquors {
+        padding: 12px 100px 12px 100px;
+        text-align: left;
+    }
+    > section.mixers {
+        padding: 12px 100px 12px 100px;
+        text-align: left;
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        padding: 12px 12px;
+        margin-top: 2px;
+        border: 2px solid #ccc;
+        background-color: #f8f8f8;
+        resize: none;
+        font-size: 1.1em;
+    }
+    .Button {
+        padding-top: 40px;
+    }
+ margin-bottom: -1450px;
+
+}
+
+    .new_submit {
+        > input[type =button], input[type =submit] {
+            z-index: 2;   
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 20px;
+            width: 995px;
+            top: 1120px;
+            font-family: Verdana;
+            font-size: 1.2em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+.success_page {    
+    opacity: 0.98;
+    filter: drop-shadow(0 0 0.75rem black);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 10px solid #241b26;
+    background-color: #fcfcfc;
+    width: 995px;
+    color: #241b26;
+    font-family: Verdana;
+}

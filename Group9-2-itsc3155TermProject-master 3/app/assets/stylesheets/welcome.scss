@@ -1,0 +1,130 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+    height: 100%;
+    
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Avoid the IE 10-11 `min-height` bug. */
+    position: relative;
+    
+}
+
+main {
+    flex: 1 0 auto;
+    
+}
+
+footer {
+    color: #aca8ad;
+    margin: auto auto 0 auto;
+    flex-shrink: 0;
+    background-color: #241b26;
+    text-align: center;
+    font-family: Verdana;
+    width: 100%;
+    padding: 20px;
+    z-index: 3;
+    margin-top: 1125px;
+}
+
+.intro {
+    font-family: Verdana;
+}
+
+.age_check {
+    font-family: Verdana;
+    
+}
+
+.welcome_body{
+    background: url(events2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.welcome_div {
+    
+    color: #241b26;
+    left: 0;
+    top: 34%;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    
+}
+
+.padding2 {
+    padding-bottom: 100px;
+}
+
+.welcome_table {
+
+    margin: 0px auto;
+    font-family: Verdana;
+    font-size: 18px;
+    
+}
+
+.welcome_div:after {
+    opacity: 0.80;
+    filter: drop-shadow(0 0 0.75rem black);
+    border-radius: 8px;
+    background: #fcfcfc;
+    width: 826px;
+    height: 200px;
+    z-index: -1;
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+   
+}
+ 
+
+
+.welcome_button {
+    > input[type =button], input[type =submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    width: 100%;
+    font-family: Verdana;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    padding-left: 5px;
+    width: 50%;
+}
+
+.button_to {
+    color: #aca8ad;
+    font-family: Verdana;
+}
+
+.button_to :hover {
+    background-color: #39d22d;
+    cursor: default;
+    color: #E6E6E6;
+}
+
+

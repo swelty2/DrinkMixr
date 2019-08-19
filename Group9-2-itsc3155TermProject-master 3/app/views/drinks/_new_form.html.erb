@@ -1,0 +1,40 @@
+<%= form_for @drink do |f| %>
+ 
+
+   <section class="image3"></section>
+ <div class="new_box">
+    <% if @drink.errors.any? %>
+      <div class="error_explanation">
+        <h2>
+          <%= pluralize(@drink.errors.count, "error") %> prohibited
+          this drink from being saved:
+        </h2>
+        <section class="error_outputs">
+          <% @drink.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </section>
+      </div>
+      <br>
+    <% end %>
+  <section class="drink_name">
+    <div class="new_text">Drink Name:</div> 
+    <%= f.text_field :name , placeholder: "Name of new drink..." %>
+  </section>
+ 
+  <section class="alcoholPerVolumeRegion">
+    <div class="new_text">APV:</div>
+    <%= f.number_field :alcoholPerVolume, class: :text_field, step: 0.01, min: 0.00, max: 100.00, placeholder: "APV percent..."%>
+  </section>
+ 
+ <%= render 'drink_dropdowns', f: f %>
+ 
+  <section class="descriptionregion">
+    <%= f.text_area :description, placeholder: "Description of new drink..." %>
+  </section>
+ </div>
+   <section class="new_submit">
+    <%= f.submit %>
+  </section>
+
+<% end %>

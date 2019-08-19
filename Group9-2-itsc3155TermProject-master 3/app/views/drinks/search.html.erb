@@ -1,0 +1,36 @@
+<body class="search_body", style="z-index: 2">
+    <main >
+        <%= render 'search_forms' %>
+        <section class="box2_transparency", style="z-index: 1"></section>
+        <div class="results">
+            <div class="results_border"></div>
+            <div class="results_region">
+                <H2>RESULTS</H2>
+            </div>
+            <div class="drinks_returned">
+                <% @drinks.each do |drink| %>
+                    <section class="drink_result">
+                        <section class="drinkname"><%= drink.name %></section>
+                        <div class="information_region">
+                            <section class="drinkapv"><strong>APV: </strong><%= drink.alcoholPerVolume %>%</section>
+                            <section class="drinkflavor"><strong>Flavor: </strong><%= drink.flavor %></section>
+                            <section class="drinkliquor">
+                                <strong><%= if drink.liquor_names.count > 1 then "Liquors" else "Liquor" end -%>:</strong>
+                                <%= drink.liquor_names.join(', ') %>
+                            </section>
+                            <section class="drinkmixer">
+                                <strong><%= if drink.mixer_names.count > 1 then "Mixers" else "Mixer" end -%>:</strong>
+                                <%= drink.mixer_names.join(', ') %>
+                            </section>
+                            <strong class="directions">Directions:</strong>
+                            <section class="drinkdescription"><%= drink.description %></section>
+                        </div>
+                    </section>
+                <% end %>
+            </div>
+        </div>
+        <div class="results_transparency"></div>
+    </main>
+</body>
+
+<%= render './footer' %>

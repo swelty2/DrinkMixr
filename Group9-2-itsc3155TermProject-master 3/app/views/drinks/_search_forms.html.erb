@@ -1,0 +1,43 @@
+<%= form_tag(search_path.split('?').first, method: :get) do %>
+  <section class="image2"></section>
+<div class="box2">
+
+  <section class="drink_name">
+    <%= text_field_tag :name, params[:name], placeholder: "Search by drink name..." %>    
+  </section>
+  <br>
+  
+  <div class="box3">
+    <strong><%= label_tag "liquorName", "Liquor" %><br></strong>
+    <section class="liquor_name">
+      <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name, boolean_style: :inline do |b| %>
+        <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
+      <% end %>
+    </section>
+    <br>
+  </div>
+  <div class="box3">
+    <strong><%= label_tag "mixerName", "Mixer" %><br></strong>
+    <section class="mixer_name">
+    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name, boolean_style: :inline do |b| %>
+      <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
+    <% end %>
+    </section>
+    <br>
+  </div>
+  <div class="box3">
+    <section class="drink_flavor">
+      <strong><%= label_tag "drinkFlavor", "Flavor" %><br></strong>
+      <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
+    </section>
+  </div>
+
+</div>
+  <div class="search_submit">
+    <%= submit_tag "Search", class: "btn btn-default" %> 
+  </div>
+<div class="box2_transparent"></div>
+
+<div class="padding"></div>
+
+<% end %>

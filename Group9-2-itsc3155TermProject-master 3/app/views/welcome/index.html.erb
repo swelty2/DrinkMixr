@@ -1,0 +1,19 @@
+<body class="welcome_body">
+    <div class="welcome_div">
+        <h4 class="intro">ALCOHOL'S GREAT, BUT IT'S EVEN GREATER WHEN ENJOYED LEGALLY</h1>
+        <p class="age_check">are you over 21?</p>
+        
+        <table class="welcome_table">
+            <tr>
+                <th class="welcome_button">
+                    <%= button_to "    Not yet!    ", 'https://kidshealth.org/en/teens/alcohol.html', class:"welcome_button", :method => "get" %>
+                </th>
+                <th class="welcome_button">
+                    <%= button_to "Heck yeah!", drinks_path, class: "welcome_button", :method => "get" %>
+
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="padding2"></div>
+</body>
