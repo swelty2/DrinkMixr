@@ -1,3 +1,10 @@
 # DrinkMixr
-1- Make sure you have Ruby v2.4 of later installed
-2- Install Rail- gem install rails
+Clone or Download git repo
+
+# install 
+Ruby v2.4 or later
+Rails v 5.2 
+
+# serve with hot reload at localhost:8080
+rails s
+
